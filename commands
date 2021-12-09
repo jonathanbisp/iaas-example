@@ -1,0 +1,8 @@
+sudo apt-get install python3-pip
+sudo apt-get install git-all
+git clone https://github.com/jonathanbisp/iaas-example.git
+cd iaas-example/
+pip3 install -r requirements.txt
+python3 -m uvicorn main:app --port 8080 --host 0.0.0.0
+
+running into http protocol
